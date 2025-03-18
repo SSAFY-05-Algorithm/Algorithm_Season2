@@ -1,0 +1,27 @@
+##문제 해결 아이디어
+### 처음에는 Permutation으로 풀 뻔했는데, 주제가 Hash라서 HashSet으로 먼저 총 포켓몬의 종류의 수를 조사하는 방법을 생각했다. 
+
+
+```java
+import java.util.*;
+import java.util.stream.Collectors;
+
+class Solution {
+    
+    static Set<Integer> how_many_pocketmon = new HashSet<>();
+    static int result=0;
+    static int n;
+    
+    public int solution(int[] nums) {
+        n = nums.length/2;
+        how_many_pocketmon = Arrays.stream(nums).boxed().collect(Collectors.toSet());
+        
+        if(how_many_pocketmon.size()>=n) {
+        	return n;
+        }
+        else {
+        	return how_many_pocketmon.size();
+        }
+    }  
+}
+```
