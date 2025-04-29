@@ -1,6 +1,6 @@
-## 프로그래머스 입국심사
+## 프로그래머스 합승택시요금
 
-(https://school.programmers.co.kr/learn/courses/30/lessons/118667)
+(https://school.programmers.co.kr/learn/courses/30/lessons/72413)
 
 ### 문제분석
 
